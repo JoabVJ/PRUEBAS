@@ -8,10 +8,21 @@
         /* Estilos globales */
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Lato', sans-serif;
             background-color: #f4f4f9;
+            padding: 10px;
             color: #333;
             line-height: 1.6;
+        }
+
+        section {
+            max-width: 960px; /* Ancho máximo del contenido */
+            margin: 20px auto; /* Márgenes automáticos para centrar */
+            padding: 20px; /* Espaciado interno */
+            background: white; /* Fondo blanco */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+            text-align: left; /* Alineación izquierda dentro de secciones */
         }
 
         /* Encabezado */
@@ -82,21 +93,59 @@
     <!-- Navegación -->
     <nav>
         <ul>
-            <h1><a>La Desigualdad Socioeconómica y su Impacto en el Acceso a la Educación Superior</a></h1>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#analisis">Análisis de Datos</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#visualizaciones">Visualizaciones</a></li>
+            <li><a href="#conclusiones">Conclusiones</a></li>
         </ul>
     </nav>
 
     <!-- Sección principal -->
-    <main>
+    <!--<main>
         <h2>Motivación</h2>
         <p>No me motiva hacer páginas web.</p>
         <h2>Procesamiento de Información (ETL)</h2>
         <p>ChatGPT</p>
         <h2>Análisis de Información y Resultados (Metodología)</h2>
         <p>Que mueran los gatos</p>
-    </main>
-
+    </main>-->
     <!-- Pie de página -->
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>En Chile, las desigualdades económicas y sociales afectan el acceso y la calidad educativa, especialmente entre colegios públicos, subvencionados y privados. 
+            A pesar de los esfuerzos del gobierno, los estudiantes de colegios con menos recursos enfrentan mayores dificultades para acceder a la educación superior, 
+            limitando sus oportunidades de desarrollo y su contribución al país.</p>
+
+        <p>La motivación detrás de este proyecto radica en la creciente preocupación por las desigualdades sociales y su impacto en las oportunidades educativas. 
+            Nuestro objetivo es entender cómo las diferencias económicas afectan el acceso a la educación superior, y qué factores podrían contribuir a reducir estas disparidades...</p>
+    </section>
+
+    <!-- Análisis de Datos -->
+    <section id="analisis">
+        <h2>Análisis de Datos</h2>
+        <p>Para realizar este análisis, utilizamos los datos de inscripción, rendición y matrícula de estudiantes. Los datos fueron procesados utilizando Python...</p>
+    </section>
+
+    <!-- Resultados -->
+    <section id="resultados">
+        <h2>Resultados</h2>
+        <p>Los resultados muestran que existe una clara desigualdad en el acceso a la educación superior según el tipo de colegio...</p>
+    </section>
+
+    <!-- Visualizaciones -->
+    <section id="visualizaciones">
+        <h2>Visualizaciones</h2>
+        <p>A continuación se presentan algunos gráficos interactivos que muestran la distribución de los datos según diversos factores...</p>
+        <!-- Ejemplo de cómo agregar una imagen de un gráfico -->
+        <img src="assets/grafico1.png" alt="Gráfico de resultados" width="600">
+    </section>
+
+    <!-- Conclusiones -->
+    <section id="conclusiones">
+        <h2>Conclusiones</h2>
+        <p>El análisis confirma que la desigualdad socioeconómica sigue siendo un factor determinante en el acceso a la educación superior...</p>
+    </section>
     <footer>
         <p>&copy; 2024 Proyecto de Ciencia de Datos. Todos los derechos reservados.</p>
     </footer>
