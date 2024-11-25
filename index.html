@@ -3,30 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Minimalista</title>
+    <title>Página Ordenada</title>
     <style>
+        /* Estilos globales */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 2rem;
-            background-color: #f7f7f7;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
         }
-        h1 {
-            color: #0078D7;
+
+        /* Encabezado */
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
         }
-        a {
-            color: #0078D7;
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #005bb5;
+            padding: 0.5rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
             text-decoration: none;
+            color: white;
+            font-weight: bold;
         }
-        a:hover {
+
+        nav ul li a:hover {
             text-decoration: underline;
+        }
+
+        /* Sección principal */
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            color: #005bb5;
+            margin-top: 0;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola, Mundo!</h1>
-    <p>Este es un diseño simple y limpio para tu página HTML.</p>
-    <a href="#">Descubre más</a>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Mi Página Ordenada</h1>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección principal -->
+    <main>
+        <h2>Bienvenido</h2>
+        <p>Esta es una página de ejemplo con un diseño moderno y organizado. Puedes personalizarla para adaptarla a tus necesidades.</p>
+        <h2>Sección Sobre Mí</h2>
+        <p>Aquí puedes incluir información sobre ti o el propósito de la página.</p>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Mi Página. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
