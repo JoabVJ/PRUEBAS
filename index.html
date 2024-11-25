@@ -1,137 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Cs Datos</title>
-    <style>
-        /* Estilos globales */
-        body {
-            margin: 0;
-            font-family: 'Lato', sans-serif;
-            background-color: #f4f4f9;
-            padding: 10px;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        section {
-            max-width: 960px; /* Ancho máximo del contenido */
-            margin: 20px auto; /* Márgenes automáticos para centrar */
-            padding: 20px; /* Espaciado interno */
-            background: white; /* Fondo blanco */
-            border-radius: 8px; /* Bordes redondeados */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
-            text-align: left; /* Alineación izquierda dentro de secciones */
-        }
-
-        /* Encabezado */
-        header {
-            background-color: #0078D7;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        /* Navegación */
-        nav {
-            background-color: #035292;
-            padding: 0.5rem 0;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 1rem;
-
-        }
-        nav ul li a {
-            color: #ffffff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Sección principal */
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        main h2 {
-            color: #005bb5;
-            margin-top: 0;
-        }
-
-        /* Pie de página */
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>Proyecto de Ciencia de Datos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Encabezado -->
+    <!-- Título principal -->
     <header>
-        <h1>Proyecto de Ciencia de Datos</h1>
-    </header>
-
-    <!-- Navegación -->
+        <h1>La Desigualdad Socioeconómica y su Impacto en el Acceso a la Educación Superior</h1>
+    </header>   
+    <!-- Menú de navegación -->
     <nav>
         <ul>
             <li><a href="#introduccion">Introducción</a></li>
             <li><a href="#analisis">Análisis de Datos</a></li>
             <li><a href="#resultados">Resultados</a></li>
-            <li><a href="#visualizaciones">Visualizaciones</a></li>
             <li><a href="#conclusiones">Conclusiones</a></li>
+            <li><a href="#retroalimentación">Retroalimentación</a></li>
+            <li><a href="#repositorios">Repositorios</a></li>
         </ul>
     </nav>
 
-    <!-- Sección principal -->
-    <!--<main>
-        <h2>Motivación</h2>
-        <p>No me motiva hacer páginas web.</p>
-        <h2>Procesamiento de Información (ETL)</h2>
-        <p>ChatGPT</p>
-        <h2>Análisis de Información y Resultados (Metodología)</h2>
-        <p>Que mueran los gatos</p>
-    </main>-->
-    <!-- Pie de página -->
+    <!-- Introducción -->
     <section id="introduccion">
         <h2>Introducción</h2>
-        <p>En Chile, las desigualdades económicas y sociales afectan el acceso y la calidad educativa, especialmente entre colegios públicos, subvencionados y privados. 
-            A pesar de los esfuerzos del gobierno, los estudiantes de colegios con menos recursos enfrentan mayores dificultades para acceder a la educación superior, 
-            limitando sus oportunidades de desarrollo y su contribución al país.</p>
+        <p>La educación es esencial para el progreso de la sociedad, pero en Chile, las diferencias económicas y sociales afectan su acceso y calidad. 
+            A pesar de los esfuerzos del Ministerio de Educación, las desigualdades son notorias entre instituciones públicas, subvencionadas y privadas, impactando recursos, infraestructura y calidad de enseñanza. 
+            Esto dificulta que estudiantes de colegios con menos recursos ingresen a la educación superior, limitando sus oportunidades y desarrollo.</p>
 
-        <p>La motivación detrás de este proyecto radica en la creciente preocupación por las desigualdades sociales y su impacto en las oportunidades educativas. 
-            Nuestro objetivo es entender cómo las diferencias económicas afectan el acceso a la educación superior, y qué factores podrían contribuir a reducir estas disparidades...</p>
+        <p>Por ello, la motivación de este proyecto radica en la creciente preocupación por las desigualdades sociales y su impacto en las oportunidades educativas. 
+            Siendo nuestro objetivo entender cómo las diferencias económicas afectan el acceso a la educación superior, generando conciencia sobre este tema, 
+            buscando impulsar cambios que permitan a todos los jóvenes acceder a una educación en condiciones más justas y equitativas.</p>
     </section>
 
     <!-- Análisis de Datos -->
     <section id="analisis">
         <h2>Análisis de Datos</h2>
-        <p>Para realizar este análisis, utilizamos los datos de inscripción, rendición y matrícula de estudiantes. Los datos fueron procesados utilizando Python...</p>
+        <div class="dropdown">
+            <button class="dropdown-button">Seleccionar sección</button>
+            <div class="dropdown-content">
+                <a href="#inscripcion">Inscripción</a>
+                <a href="#rendicion">Rendición</a>
+                <a href="#postulacion">Postulación</a>
+                <a href="#matricula">Matrícula</a>
+            </div>
+        </div>
+        <h3>Datos usados</h3>
+        <p>Todos los datos empleados en este trabajo son de acceso libre y fueron publicados por el Departamento de Evaluación, Medición y Registro Educacional (DEMRE). 
+            Estos incluyen información relacionada con los procesos de inscripción, rendición, postulación y matrícula de los años 2019 a 2023, 
+            disponibles en el portal oficial de <a href="https://demre.cl/portales/portal-bases-datos" class="link-demre">base de datos del DEMRE</a>.
+        </p>
+        <h3>ETL</h3>
+        Tras descomprimir todos los archivos, agrupamos los dataframes correspondientes a los años 2019-2023 según su sección y realizamos una limpieza para conservar únicamente la información relevante para nuestra investigación. 
+        Los datos finales quedaron organizados de la siguiente manera:
+
+        <!-- Tabla de Inscripción -->
+            <section id="inscripcion">
+                <h4>Inscripción</h4>
+                <table class="tabla-estilo">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ID_AUX</td>
+                            <td>Identificador único del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>ANYO_PROCESO</td>
+                            <td>Año correspondiente al proceso de admisión</td>
+                        </tr>
+                        <tr>
+                            <td>SEXO</td>
+                            <td>Sexo del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>GRUPO_DEPENDENCIA</td>
+                            <td>Tipo de financiamiento del establecimiento de egreso</td>
+                        </tr>
+                        <tr>
+                            <td>FECHA_NACIMIENTO</td>
+                            <td>Mes y año de nacimiento del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>ANYO_EGRESO</td>
+                            <td>Año en que el postulante egresó de la educación media</td>
+                        </tr>
+                        <tr>
+                            <td>CODIGO_REGION_D</td>
+                            <td>Código de la región de domicilio del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>CODIGO_COMUNA_D</td>
+                            <td>Código de la comuna de domicilio del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>INGRESO_PERCAPITA_GRUPO_FA</td>
+                            <td>Ingreso per cápita del grupo familiar del postulante</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- Tabla de Rendición -->
+            <section id="rendicion">
+                <h4>Rendición</h4>
+                <table class="tabla-estilo">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ID_AUX</td>
+                            <td>Identificador único del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>PROMEDIO_NOTAS</td>
+                            <td>Promedio de notas de la educación media del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>PTJE_NEM</td>
+                            <td>Puntaje estándar asignado al promedio de notas (NEM) del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>PTJE_RANKING</td>
+                            <td>Puntaje estándar asignado al ranking de notas del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>CLEC_REG_ACTUAL</td>
+                            <td>Puntaje en la prueba de Competencia Lectora actual del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>MATE1_REG_ACTUAL</td>
+                            <td>Puntaje en la prueba de Competencia Matemática 1 actual del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>MATE2_REG_ACTUAL</td>
+                            <td>Puntaje en la prueba de Competencia Matemática 2 actual del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>HCSOC_REG_ACTUAL</td>
+                            <td>Puntaje en la prueba de Historia actual del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>CIEN_REG_ACTUAL</td>
+                            <td>Puntaje en la prueba de Ciencias actual del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>GRUPO_DEPENDENCIA</td>
+                            <td>Tipo de financiamiento del establecimiento de egreso</td>
+                        </tr>
+                        <tr>
+                            <td>CODIGO_REGION</td>
+                            <td>Código de la región del establecimiento de egreso del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>CODIGO_COMUNA</td>
+                            <td>Código de la comuna del establecimiento de egreso del postulante</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- Tabla de Postulación -->
+            <section id="postulacion">
+                <h4>Postulación</h4>
+                <table class="tabla-estilo">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ID_AUX</td>
+                            <td>Identificador único del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>SITUACION_POSTULANTE</td>
+                            <td>Código que indica la situación del postulante respecto a sus postulaciones en el programa BEA</td>
+                        </tr>
+                        <tr>
+                            <td>PTJE_PREFXX</td>
+                            <td>Puntaje ponderado del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>SIT_POSTULANTE_BEA</td>
+                            <td>Código que indica la situación del postulante respecto a sus postulaciones en el programa BEA</td>
+                        </tr>
+                        <tr>
+                            <td>PTJE_PREFXX_BEA</td>
+                            <td>Puntaje ponderado de estudiantes con postulación al programa BEA</td>
+                        </tr>
+                        <tr>
+                            <td>SIT_POSTULANTE_PACE</td>
+                            <td>Código que indica la situación del postulante respecto a sus postulaciones en el programa PACE</td>
+                        </tr>
+                        <tr>
+                            <td>PTJE_PREFXX_PACE</td>
+                            <td>Puntaje ponderado de estudiantes con postulación al programa PACE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <!-- Tabla de Matrícula -->
+            <section id="matricula">
+                <h4>Matrícula</h4>
+                <table class="tabla-estilo">
+                    <thead>
+                        <tr>
+                            <th>Campo</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ID_AUX</td>
+                            <td>Identificador único del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>VIA</td>
+                            <td>Vía de admisión de la matrícula del postulante</td>
+                        </tr>
+                        <tr>
+                            <td>PTJE_PONDERADO</td>
+                            <td>Puntaje ponderado con el que el postulante se matriculó</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        
+        <h3>EDA</h3>
     </section>
 
     <!-- Resultados -->
@@ -140,22 +249,57 @@
         <p>Los resultados muestran que existe una clara desigualdad en el acceso a la educación superior según el tipo de colegio...</p>
     </section>
 
-    <!-- Visualizaciones -->
-    <section id="visualizaciones">
-        <h2>Visualizaciones</h2>
-        <p>A continuación se presentan algunos gráficos interactivos que muestran la distribución de los datos según diversos factores...</p>
-        <!-- Ejemplo de cómo agregar una imagen de un gráfico -->
-        <img src="assets/grafico1.png" alt="Gráfico de resultados" width="600">
-    </section>
-
     <!-- Conclusiones -->
     <section id="conclusiones">
         <h2>Conclusiones</h2>
         <p>El análisis confirma que la desigualdad socioeconómica sigue siendo un factor determinante en el acceso a la educación superior...</p>
     </section>
+
+    <!-- Retroalimentación -->
+    <section id="retroalimentacion">
+        <h2>Retrospectiva, problemáticas, y posibles extensiones</h2>
+        <h3>Comparación entre pruebas</h3>
+        <p>El sistema de admisión a la educación superior en Chile ha pasado por varios cambios recientes. En 2020, la PSU (Prueba de Selección Universitaria) fue reemplazada por la PDT (Prueba de Transición), 
+            con un enfoque en medir competencias fundamentales y reducir contenidos específicos. Luego, en 2023, el Ministerio de Educación introdujo la PAES (Prueba de Acceso a la Educación Superior), 
+            que incluyó la división de la prueba de Matemáticas en dos versiones: Matemática 1 (M1), orientada a habilidades generales, y Matemática 2 (M2), para carreras que requieren un nivel avanzado en esta área. 
+            Además, se ajustó la escala de puntajes, cambiando de un rango de 150 a 850 puntos en la PDT a uno de 100 a 1.000 puntos en la PAES, buscando mostrar de manera más precisa las diferencias en los niveles de desempeño de cada estudiante.
+        </p>
+
+        <h3>Diferencia en la densidad de las comunas</h3>
+        <p>A raíz de nuestro análisis, hemos identificado que la cantidad de personas por comuna que rindieron la prueba de admisión a la educación superior varía en gran medida en algunos casos. 
+            Esto implica que las comparaciones entre comunas no son completamente proporcionales, ya que las diferencias en la cantidad de postulantes pueden influir en los resultados generales. 
+            Este aspecto debe ser considerado al interpretar los datos, ya que puede generar sesgos o conclusiones que no reflejan adecuadamente las realidades educativas de cada comuna.
+        </p>
+
+        <h3>Posibles extensiones</h3>
+        <p>Debido a la gran cantidad de regiones y comunas en Chile, decidimos enfocar nuestro análisis en la Región Metropolitana y sus respectivas comunas, ya que esta región es la capital del país y tiene la mayor concentración de población. 
+            Esta decisión se tomó con la idea de simplificar el alcance del proyecto para centrarnos mejor en los resultados de nuestros análisis. 
+            Sin embargo, creemos que extender el estudio a otras regiones del país ofrecería una visión más amplia, permitiendo comparar zonas más vulnerables y entender mejor las diferencias entre ellas, tanto a nivel económico como a nivel educativo.
+        </p>
+        <p>A mayor escala, se podría llevar a cabo un análisis comparativo entre regiones, lo que permitiría identificar tendencias y diferencias significativas en aspectos como educación, acceso a servicios y calidad de vida. 
+            También sería posible realizar comparaciones a nivel de comunas, ampliando el análisis a todo el territorio nacional y proporcionando datos útiles para políticas públicas orientadas a la mejora de las zonas más desfavorecidas.
+        </p>
+    </section>
+    
+
+    <!-- Repositorios -->
+    <section id="repositorios">
+        <h2>Repositorios</h2>
+        <p>Para este proyecto se desarrollaron dos repositorios en GitHub:</p>
+        
+        <p>El primero contiene una propuesta y el análisis de los datos trabajados: 
+            <a href="https://github.com/javibascur/Proyecto-Cs-Datos.git" class="link-demre">Propuesta y análisis de datos</a>.
+        </p>
+
+        <p>El segundo está dedicado a la creación de la página web del proyecto mediante GitHub Pages: 
+            <a href="https://github.com/Amath3o/Proyecto_Cs_Datos_Pagina.git" class="link-demre">Página web del proyecto</a>.
+        </p>
+    </section>
+    
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Proyecto de Ciencia de Datos. Todos los derechos reservados.</p>
     </footer>
-
 </body>
 </html>
+
