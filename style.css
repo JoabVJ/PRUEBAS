@@ -1,0 +1,133 @@
+/* Ajustes generales */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 10px; /* Añade un margen interno general para el texto */
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor principal */
+section {
+  max-width: 960px; /* Ancho máximo del contenido */
+  margin: 20px auto; /* Márgenes automáticos para centrar */
+  padding: 20px; /* Espaciado interno */
+  background: white; /* Fondo blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+  text-align: left; /* Alineación izquierda dentro de secciones */
+}
+
+/* Títulos */
+header {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+}
+header h1 {
+  margin:0;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Navegación */
+nav {
+  background-color: #2674a8;
+  padding: 0.5rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Párrafos */
+p {
+  margin-bottom: 20px; /* Espaciado entre párrafos */
+}
+
+/* Imágenes */
+img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilo para el enlace */
+a.link-demre {
+    color: #3498db; /* Cambia el color del texto */
+    font-weight: bold; /* Hace el texto en negrita */
+    text-decoration: none; /* Elimina el subrayado */
+    border-bottom: 2px solid #3498db; /* Agrega una línea debajo */
+    padding-bottom: 2px; /* Da un pequeño margen en la parte inferior */
+}
+
+a.link-demre:hover {
+    color: #2980b9; /* Cambia el color al pasar el ratón */
+    border-bottom-color: #2980b9; /* Cambia el color de la línea al pasar el ratón */
+}
+
+/* Estilo para las tablas */
+.tabla-estilo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.tabla-estilo th, .tabla-estilo td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-estilo th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+.tabla-estilo tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabla-estilo tr:hover {
+    background-color: #eaeaea;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2c3e50;
+  color: white;
+  margin-top: 2rem;
+}
+
